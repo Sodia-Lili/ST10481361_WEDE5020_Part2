@@ -5,3 +5,4 @@
 2025/09/25 20:00 Fix the mobile and tablet layouts and add hover, focus for the navigation bar
 2025/09/25 20:45 adjusted the mobile and tablet layouts because of the added banner
 2025/09/25 20:59 added hamburger navigation for mobile
+2025/09/25 21:54 added srcset to banner and Kaminari picture to resize
