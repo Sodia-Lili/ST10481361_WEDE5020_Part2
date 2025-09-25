@@ -1,0 +1,94 @@
+/* Base CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove list styles and link underlines by default */
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Images responsive by default */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Main Styles */
+body {
+  background-color: #fad3dcf2; /* Light cotton candy/bubblegum pink */
+  color: #000; /* Black text */
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Headings - separated for easy editing */
+header h1 {
+  text-align: left;
+}
+h1 {
+  font-family: 'Papyrus', 'Brush Script MT', fantasy, cursive, Arial, sans-serif;
+  color: #000;
+}
+
+h2 {
+  font-family: 'Papyrus', 'Brush Script MT', fantasy, cursive, Arial, sans-serif;
+  color: #000;
+}
+
+h3 {
+  font-family: 'Papyrus', 'Brush Script MT', fantasy, cursive, Arial, sans-serif;
+  color: #000;
+}
+
+h4 {
+  font-family: 'Papyrus', 'Brush Script MT', fantasy, cursive, Arial, sans-serif;
+  color: #000;
+}
+
+h5 {
+  font-family: 'Papyrus', 'Brush Script MT', fantasy, cursive, Arial, sans-serif;
+  color: #000;
+}
+
+h6 {
+  font-family: 'Papyrus', 'Brush Script MT', fantasy, cursive, Arial, sans-serif;
+  color: #000;
+}
+
+.search-bar {
+  margin-bottom: 1rem;
+}
+
+/* Add spacing below every carousel section */
+[id^="carousel-"] {
+  margin-bottom: 2rem;
+}
+
+/* Add spacing above every heading */
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
