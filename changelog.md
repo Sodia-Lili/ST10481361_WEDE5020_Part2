@@ -1,3 +1,25 @@
+Part 1 
+Change requests:
+
+*No wireframes
+
+*No comments made
+
+*No changelog provided
+
+*Next time, include the reference list in both the proposal document and README
+
+Changes
+2025/09/24 Added comments to all pages
+
+2025/09/25 Begin a part 2 changelog
+
+2025/09/26 Completed Wireframe
+
+
+
+
+
 2025/09/25 16:57 Created CSS file, set base style and began typography styling
 
 2025/09/25 17:12 Updated the button styles' hover and focus. Fix the spacing of images and carousels
