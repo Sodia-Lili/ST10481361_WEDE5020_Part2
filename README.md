@@ -30,27 +30,48 @@ W3Schools. (n.d.). CSS Pseudo-elements. Retrieved September 25, 2025, from https
 Screenshots
 
 <img width="800" height="950" alt="Tablet-Products" src="https://github.com/user-attachments/assets/c7954d0b-3dac-4080-b4bc-c13bd4f888f5" />
-Product Page on the Tablet Layout
+
+* Product Page on the Tablet Layout
+
 <img width="800" height="950" alt="Tablet-Newsletter" src="https://github.com/user-attachments/assets/e8292dc3-d5c7-4109-9e52-d922ed4787b2" />
-Newsletter Page on the Tablet Layout
+
+* Newsletter Page on the Tablet Layout
+
 <img width="800" height="950" alt="Tablet-Homepage" src="https://github.com/user-attachments/assets/bc400a90-4e18-4de6-b21a-941e6bcb8421" />
-Home Page on the Tablet Layout
+
+* Home Page on the Tablet Layout
+  
 <img width="800" height="950" alt="Mobile-Products" src="https://github.com/user-attachments/assets/d565600f-d64c-412d-964e-fe14b75aab44" />
-Product Page on the Mobile Layout
+
+* Product Page on the Mobile Layout
+  
 <img width="800" height="950" alt="Mobile-Newsletter" src="https://github.com/user-attachments/assets/7350a72f-769f-49cc-b251-5b058e86b7a5" />
-Newsletter Page on the Mobile Layout
+
+* Newsletter Page on the Mobile Layout
+  
 <img width="800" height="950" alt="Mobile-Navigation" src="https://github.com/user-attachments/assets/b28a784a-cb38-4d04-a4aa-4160ea210b05" />
-Navigation Hamburger dropdown on the Mobile Layout
+
+* Navigation Hamburger dropdown on the Mobile Layout
+  
 <img width="800" height="950" alt="Mobile-Homepage" src="https://github.com/user-attachments/assets/3afebc42-6d2a-49f0-98c2-7700177212ec" />
-Home Page on the Mobile Layout
+
+* Home Page on the Mobile Layout
+  
 <img width="800" height="950" alt="Desktop-Product" src="https://github.com/user-attachments/assets/b8271644-f948-4f16-8378-9c7fc432fb09" />
-Product Page on the Desktop Layout
+
+* Product Page on the Desktop Layout
+  
 <img width="800" height="950" alt="Desktop-Newsletter" src="https://github.com/user-attachments/assets/6fb3368c-09da-4986-8353-ceef0c9f762d" />
-Newsletter Page on the Desktop Layout
+
+* Newsletter Page on the Desktop Layout
+  
 <img width="800" height="950" alt="Desktop-Homepage" src="https://github.com/user-attachments/assets/f2b2afe9-9c93-465e-bc0a-45ec4aa2a83c" />
-Home Page on the Desktop Layout
+
+* Home Page on the Desktop Layout
+  
 <img width="800" height="950" alt="Desktop-About" src="https://github.com/user-attachments/assets/b8397657-259f-4b17-8bcb-47514d7942e8" />
-About Page on the Desktop Layout
+
+* About Page on the Desktop Layout
 
 
 
