@@ -14,7 +14,7 @@ Changes
 
 2025/09/25 Begin a part 2 changelog
 
-2025/09/26 Completed Wireframe
+2025/09/26 Completed Wireframe link: https://wireframe.cc/y4aEq3
 
 
 
