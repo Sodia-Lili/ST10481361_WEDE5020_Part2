@@ -10,6 +10,7 @@ Change requests:
 + Next time, include the reference list in both the proposal document and README
 
 Changes
+
 2025/09/24 Added comments to all pages
 
 2025/09/25 Begin a part 2 changelog
