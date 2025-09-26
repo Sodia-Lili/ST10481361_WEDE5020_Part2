@@ -1,13 +1,13 @@
 Part 1 
 Change requests:
 
-*No wireframes
+- No wireframes
 
-*No comments made
+- No comments made
 
-*No changelog provided
+- No changelog provided
 
-*Next time, include the reference list in both the proposal document and README
++ Next time, include the reference list in both the proposal document and README
 
 Changes
 2025/09/24 Added comments to all pages
