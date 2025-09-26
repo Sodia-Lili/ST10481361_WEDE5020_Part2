@@ -27,6 +27,12 @@ W3Schools. (n.d.). CSS Pseudo-classes. Retrieved September 25, 2025, from https:
 
 W3Schools. (n.d.). CSS Pseudo-elements. Retrieved September 25, 2025, from https://www.w3schools.com/css/css_pseudo_elements.asp
 
+Testing
+
+* Chrome
+* Firefox
+* Edge
+  
 Screenshots
 
 <img width="800" height="950" alt="Tablet-Products" src="https://github.com/user-attachments/assets/c7954d0b-3dac-4080-b4bc-c13bd4f888f5" />
