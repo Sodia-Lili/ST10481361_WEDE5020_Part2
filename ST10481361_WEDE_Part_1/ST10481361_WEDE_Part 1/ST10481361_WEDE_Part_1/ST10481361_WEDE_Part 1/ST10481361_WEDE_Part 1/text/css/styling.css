@@ -1,0 +1,433 @@
+/* Base CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*(W3Schools, n.d.)*/
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* :root variables */
+:root {
+  /* Color Palette */
+  --color-background: #f4d2da;   /* Light cotton candy/bubblegum pink */
+  --color-text: #000000;         /* Black */
+  --color-border: #fad3dc;       /* Soft pink border */
+  --color-hover-bg: #fad3dc;     /* Button hover background */
+  --color-hover-border: #ffb6c1; /* Stronger pink for hover border */
+  --color-button-bg: #ffffff;    /* Default button background */
+
+  /* Fonts */
+  --font-body: Arial, sans-serif;
+  --font-heading: 'Papyrus', 'Brush Script MT', fantasy, cursive, Arial, sans-serif;
+
+  /* Sizes */
+  --radius: 8px;
+  --space-small: 0.5rem;
+  --space-medium: 1rem;
+  --space-large: 2rem;
+}
+
+/* Remove list styles and link underlines by default */
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Images responsive by default */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Main Styles */
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  margin: 0;
+}
+
+/* Headings - separated for easy editing */
+header h1 {
+  text-align: left;
+}
+h1 {
+  font-family: var(--font-heading);
+  color: var(--color-text);
+  margin-bottom: var(--space-medium);
+}
+
+h2 {
+  font-family: var(--font-heading);
+  color: var(--color-text);
+  margin-top: var(--space-large);
+  margin-bottom: var(--space-medium);
+}
+
+h3 {
+  font-family: var(--font-heading);
+  color: var(--color-text);
+  margin-bottom: var(--space-small);
+}
+/*(W3Schools, n.d.)*/
+p {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  margin-bottom: var(--space-medium);
+}
+
+ul, ol {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  margin-bottom: var(--space-medium);
+}
+
+
+/* Add spacing below the search bar */
+.search-bar {
+  margin-bottom: var(--space-medium);
+}
+
+/* Add spacing below every carousel section */
+[id^="carousel-"] {
+  margin-bottom: var(--space-large);
+}
+
+/* Button Styles */
+button {
+  background-color: var(--color-button-bg);
+  color: var(--color-text);
+  border: 2px solid var(--color-border);
+  padding: var(--space-small) var(--space-medium);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+/* Button hover and focus states */
+button:hover,
+button:focus {
+  background-color: var(--color-hover-bg);
+  color: var(--color-button-bg);
+  border-color: var(--color-hover-border);
+  outline: none;
+}
+/*(W3Schools, n.d.)*/
+
+/* Navigation link hover and focus */
+.nav a:hover,
+.nav a:focus {
+  background-color: var(--color-hover-bg);
+  color: var(--color-button-bg);
+  outline: 2px solid var(--color-hover-border);
+  outline-offset: 2px;
+}
+
+/*only show outline for keyboard users */
+button:focus-visible,
+.nav a:focus-visible {
+  outline: 2px solid var(--color-hover-border);
+  outline-offset: 2px;
+}
+
+/* Carousel Image Sizing */
+/* Default (mobile first) */
+[id^="carousel-"] img {
+  max-width: 100%;
+  height: 100%;  /* default height for mobile */
+  display: block;
+  object-fit: contain; /* keeps full image, no cropping */
+}
+
+ /*(ChatGPT, 2025)*/
+ 
+/* Wrap each carousel image in a fixed-size container */
+#carousel-featured-images > div,
+#carousel-new-images > div,
+#carousel-best-images > div,
+#carousel-products-images > div {
+  width: 150px;
+  height: 150px;
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+/* Tablet and up (≥600px) — enforce consistent height */
+@media (min-width: 600px) {
+  [id^="carousel-"] img {
+    height: 150px;   /* everything equal height */
+    width: auto;
+    object-fit: cover; /* trims excess width for consistency */
+  }
+}
+
+
+/* Default mobile styles (≤600px) */
+#carousel-featured-images > div span,
+#carousel-new-images > div span,
+#carousel-best-images > div span,
+#carousel-products-images > div span,
+#carousel-featured-images > div,
+#carousel-new-images > div,
+#carousel-best-images > div,
+#carousel-products-images > div {
+  font-size: 0.8rem;   /* small for mobile */
+  margin-top: 4px;
+  line-height: 1.2;
+}
+/*(W3Schools, n.d.)*/
+/* Mobile-only: hide arrows and enable swipe */
+@media (max-width: 599px) {
+  [id^="carousel-"] button {
+    display: none; /* hide arrows */
+  }
+  
+  /*(ChatGPT, 2025)*/
+
+  /* Horizontal swipe container */
+  [id^="carousel-"] > div {
+    display: flex;
+    overflow-x: auto;       /* allows swipe */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 10px;
+  }
+
+  /* Each carousel item */
+  [id^="carousel-"] > div > div {
+    flex: 0 0 80%;            /* one image per swipe */
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;             /* increase total height */
+    justify-content: flex-start; /* top-align image + text */
+  }
+
+  /* Images: responsive, fit container */
+ [id^="carousel-"] > div > div img {
+    height: 110px;             /* image height */
+    width: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+ /*(ChatGPT, 2025)*/
+
+  /* Name under image */
+  [id^="carousel-"] > div > div span {
+    font-size: 0.9rem;         /* readable size */
+    margin-top: 5px;
+    text-align: center;
+    white-space: nowrap;       /* prevent wrapping */
+  }
+
+}
+
+
+/* Tablet: ≥600px */
+@media (min-width: 600px) {
+  #carousel-featured-images > div span,
+  #carousel-new-images > div span,
+  #carousel-best-images > div span,
+  #carousel-products-images > div span,
+  #carousel-featured-images > div,
+  #carousel-new-images > div,
+  #carousel-best-images > div,
+  #carousel-products-images > div {
+    font-size: 0.9rem;
+    margin-top: 6px;
+    line-height: 1.3;
+  }
+}
+
+/*(W3Schools, n.d.)*/
+
+/* Laptop: ≥900px */
+@media (min-width: 900px) {
+  #carousel-featured-images > div span,
+  #carousel-new-images > div span,
+  #carousel-best-images > div span,
+  #carousel-products-images > div span,
+  #carousel-featured-images > div,
+  #carousel-new-images > div,
+  #carousel-best-images > div,
+  #carousel-products-images > div {
+    font-size: 1rem;
+    margin-top: 8px;
+    line-height: 1.4;
+  }
+}
+
+/* Desktop: ≥1200px */
+@media (min-width: 1200px) {
+  #carousel-featured-images > div span,
+  #carousel-new-images > div span,
+  #carousel-best-images > div span,
+  #carousel-products-images > div span,
+  #carousel-featured-images > div,
+  #carousel-new-images > div,
+  #carousel-best-images > div,
+  #carousel-products-images > div {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+}
+/*(W3Schools, n.d.)*/
+
+
+.medium-img {
+  width: 95px !important;
+  height: auto;
+  object-fit: cover;
+}
+
+.small-img {
+  width: 70px !important;
+  height: auto;
+  object-fit: cover;
+}
+
+.homepage-banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 200px; /* default mobile height */
+  object-fit: cover;
+}
+
+.homepage-banner img {
+  width: 100%;
+  height: 100%;         /* fill the container */
+  object-fit: cover;    /* maintain aspect ratio */
+}
+
+/* Tablet: ≥600px */
+@media (min-width: 600px) {
+  .homepage-banner {
+    height: 250px;
+  }
+}
+
+/* Laptop: ≥900px */
+@media (min-width: 900px) {
+  .homepage-banner {
+    height: 300px;
+  }
+}
+
+/* Desktop: ≥1200px */
+@media (min-width: 1200px) {
+  .homepage-banner {
+    height: 350px;
+  }
+}
+
+/* Navigation Styles  */
+
+/* Mobile-first: hamburger + vertical links hidden */
+.nav {
+  position: relative;
+}
+
+.nav .hamburger {
+  display: block;
+  background: var(--color-button-bg);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.nav .nav-links {
+  display: none;          /* hidden by default */
+  flex-direction: column; /* vertical stack */
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.nav .nav-links a {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius);
+  text-align: center;
+  background: var(--color-button-bg);
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+/* Hover & focus */
+.nav .nav-links a:hover,
+.nav .nav-links a:focus {
+  background-color: var(--color-hover-bg);
+  color: var(--color-button-bg);
+  border-color: var(--color-hover-border);
+}
+
+/*(W3Schools, n.d.)*/
+
+/* Tablet and up: horizontal nav, always visible, hide hamburger */
+@media (min-width: 600px) {
+  .nav .hamburger {
+    display: none;
+  }
+
+  .nav .nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 0;
+  }
+
+  .nav .nav-links a {
+    text-align: center;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Hide arrows on mobile */
+@media (max-width: 599px) {
+  [id^="carousel-"] button {
+    display: none;
+  }
+}
+
+/* Mobile-only: horizontal scroll with snap points */
+@media (max-width: 599px) {
+  [id^="carousel-"] > div {
+    display: flex;
+    overflow-x: auto;      /* allows horizontal scroll/swipe */
+    scroll-snap-type: x mandatory; /* snaps images into place */
+    -webkit-overflow-scrolling: touch; /* smooth on iOS */
+    gap: 10px;
+  }
+
+  [id^="carousel-"] > div > div {
+    flex: 0 0 80%;         /* roughly one image per swipe */
+    scroll-snap-align: start; /* each item snaps */
+  }
+}
+
+
+
+

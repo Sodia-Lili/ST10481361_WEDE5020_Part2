@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaniSide</title>
+    <link rel="stylesheet" href="../css/styling.css">
+</head>
+<body>
+    <header >
+        <h1>SaniSide</h1>
+
+          <!-- Search Bar -->
+        <form>
+  <input type="text" name="search" placeholder="Search..." />
+  <button type="submit">Search</button>
+ </form>
+
+        <!--Navigation Bar-->
+         <nav class="nav">
+  <button class="hamburger" aria-label="Toggle menu">&#9776;</button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="newsletter.html">Newsletter</a></li>
+  </ul>
+</nav>
+    </header>
+
+    <main>
+        <h2>Welcome to SaniSide</h2>
+        
+        <h3>Featured</h3>
+
+
+<div id="carousel-featured-sellers" style="display: flex; align-items: center; gap: 10px;" >
+  <button id="carousel-featured-left" aria-label="Scroll left" >&lt;</button>
+  <div id="carousel-featured-images" style="display: flex; gap: 10px;">
+    <!--srcset and sizes attributes for responsive images-->
+    <div>
+      <img src="../../images/Lumine_Bikini.jpg" 
+      srcset="../../images/Lumine_Bikini-200.jpg 200w,
+               ../../images/Lumine_Bikini-400.jpg 400w,
+               ../../images/Lumine_Bikini-600.jpg 600w,
+               ../../images/Lumine_Bikini.jpg 736w"
+       sizes="(max-width: 599px) 90vw,
+              (max-width: 1024px) 40vw,
+              25vw"
+              alt="Three mannequins display a Lumine cosplay bikini set inspired by Genshin Impact, featuring a white and blue top with orange zigzag accents, matching skirt, and tassel details. The mannequins are arranged in a bright studio setting with a clean white background. No visible text in the image. The overall tone is playful and vibrant." >
+      <span>Lumine</span>
+    </div>
+    <!--srcset and sizes attributes for responsive images-->
+    <div >
+      <img src="../../images/2025_New_Rose_Nilou.jpg" 
+      srcset="../../images/2025_New_Rose_Nilou-200.jpg 200w,
+               ../../images/2025_New_Rose_Nilou-400.jpg 400w,
+               ../../images/2025_New_Rose_Nilou-600.jpg 600w,
+               ../../images/2025_New_Rose_Nilou.jpg 736w"
+       sizes="(max-width: 599px) 90vw,
+              (max-width: 1024px) 40vw,
+              25vw"
+              alt="Mannequin displays a Nilou cosplay costume inspired by Genshin Impact, featuring a flowing blue and gold sheer skirt, matching top, and delicate gold accents. The mannequin is positioned in a bright, clean studio setting with a white stool. The overall tone is elegant and whimsical. No visible text in the image." >
+      <span>Nilou</span>
+    </div>
+    <!--srcset and sizes attributes for responsive images-->
+    <div >
+    <img src="../../images/genshin_impact_Hutao.jpg" 
+    srcset="../../images/genshin_impact_Hutao-200.jpg 200w,
+               ../../images/genshin_impact_Hutao-400.jpg 400w,
+               ../../images/genshin_impact_Hutao-600.jpg 600w,
+               ../../images/genshin_impact_Hutao.jpg 736w"
+       sizes="(max-width: 599px) 90vw,
+              (max-width: 1024px) 40vw,
+              25vw"
+              alt="Mannequin displays a Hutao cosplay bikini set inspired by Genshin Impact, featuring a burgundy ruffled top with a bow and gold trim, and a sheer black skirt with red sash and playful ghost print. The mannequin is set against a plain white studio background, creating a whimsical and cheerful tone. No visible text in the image." >
+      <span>Hutao</span>
+    </div>
+    <!--srcset and sizes attributes for responsive images-->
+    <div >
+     <img src="../../images/Nahida_Genshin_Impact_swimsuit.jpg" 
+     srcset="../../images/Nahida_Genshin_Impact_swimsuit-200.jpg 200w,
+               ../../images/Nahida_Genshin_Impact_swimsuit-400.jpg 400w,
+               ../../images/Nahida_Genshin_Impact_swimsuit-600.jpg 600w,
+               ../../images/Nahida_Genshin_Impact_swimsuit.jpg 736w"
+       sizes="(max-width: 599px) 90vw,
+              (max-width: 1024px) 40vw,
+              25vw"
+              alt="Mannequin displays a Nahida cosplay swimsuit set inspired by Genshin Impact, featuring a green ruffled off-shoulder top adorned with white and yellow flowers and a white skirt with gold patterns. The mannequin is set against a plain white studio background, creating a whimsical and cheerful tone. No visible text in the image." >
+      <span>Nahida</span>
+    </div>
+    <!--srcset and sizes attributes for responsive images-->
+    <div>
+      <img src="../../images/Rengoku Kyoujurou Swimsuit.jpg" 
+      srcset="../../images/Rengoku%20Kyoujurou%20Swimsuit-200.jpg 200w,
+               ../../images/Rengoku%20Kyoujurou%20Swimsuit-400.jpg 400w,
+               ../../images/Rengoku%20Kyoujurou%20Swimsuit-600.jpg 600w,
+               ../../images/Rengoku%20Kyoujurou%20Swimsuit.jpg 736w"
+       sizes="(max-width: 599px) 90vw,
+              (max-width: 1024px) 40vw,
+              25vw"
+              alt="Mannequin displays a Rengoku Kyoujurou cosplay bikini set inspired by Demon Slayer, featuring a halter neck top and matching skirt with bold flame patterns in red, yellow, and orange. The mannequin is set against a plain white studio background, creating a vibrant and energetic tone. No visible text in the image." >
+      <span>Rengoku</span>
+    </div>
+    <!--srcset and sizes attributes for responsive images-->
+  </div>
+  <button id="carousel-featured-right" aria-label="Scroll right" >&gt;</button>
+</div>
+
+<!--Homepage Banner-->
+<!--srcset and sizes attributes for responsive images-->
+    <section class="homepage-banner">
+    <img src="../../images/homepage-banner-removebg-preview.png"
+    srcset="../../images/banner-small.png 480w,
+            ../../images/banner-medium.png 768w,
+            ../../images/banner-large.png 1200w" 
+            sizes="100vw" alt="banner">
+  </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 SaniSide. All rights reserved.</p>
+    </footer>
+
+      <script src="../javascript/functions.js"></script>
+</body>
+</html>

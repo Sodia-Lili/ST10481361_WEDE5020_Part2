@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter</title>
+    <link rel="stylesheet" href="../css/styling.css">
+</head>
+<body>
+    <header >
+    <h1>SaniSide</h1>
+  <!-- Search Bar -->
+    <form>
+  <input type="text" name="search" placeholder="Search..." />
+  <button type="submit">Search</button>
+ </form>
+     
+     <!-- Navigation Bar -->
+     <nav class="nav">
+  <button class="hamburger" aria-label="Toggle menu">&#9776;</button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="newsletter.html">Newsletter</a></li>
+  </ul>
+</nav>
+    </header>
+
+    
+    <main>
+        <h2>Newsletter</h2>
+        <!--Newsletter Subscription Form-->
+        <p>Subscribe to our newsletter to receive the latest updates and offers from SaniSide.</p>
+        <form action="#" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        <!--List for Issues and Updates-->
+        <h3>Past Issues & Updates</h3> 
+        <ul>
+            <li>Issue #1 - January 2024: New Year, New Products!</li>
+            <li>Issue #2 - February 2024: Valentine's Day Special Offers</li>
+            <li>Issue #3 - March 2024: Surf and Chill</li>
+        </ul>
+<!--List for Promotions-->
+        <h3>Promotions</h3>
+        <ul>
+            <li>10% off on all orders over $50 - Use code SPRING10</li>
+            <li>Free shipping on orders over $75</li>
+            <li>Buy one, get one 50% off on select items</li>
+        </ul>
+<!--List for Offers-->
+        <h3>Offers</h3>
+        <ul>
+            <li>Exclusive early access to new product launches for subscribers</li>
+            <li>Monthly giveaways and contests</li>
+            <li>Special discounts for loyal customers</li>
+        </ul>
+
+        <!--Homepage Banner-->
+<!--srcset and sizes attributes for responsive images-->
+         <section class="homepage-banner">
+    <img src="../../images/homepage-banner-removebg-preview.png"
+    srcset="../../images/banner-small.png 480w,
+            ../../images/banner-medium.png 768w,
+            ../../images/banner-large.png 1200w" 
+            sizes="100vw" alt="banner">
+  </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 SaniSide. All rights reserved.</p>
+    </footer>
+    <!--Javascript for Hamburger Navigation-->
+    <script src="../javascript/functions.js"></script>
+</body>
+</html>
