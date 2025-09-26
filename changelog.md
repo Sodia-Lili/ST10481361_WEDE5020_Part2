@@ -17,3 +17,5 @@
 2025/09/26 03:05 In mobile layout, switched arrows to sliders for user-friendly and layout-friendly purposes
 
 2025/09/26 12:39 Added srcsets to ALL the images used
+
+2025/09/26 13:08 Finalised spacing
